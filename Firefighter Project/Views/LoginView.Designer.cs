@@ -1,6 +1,6 @@
 ﻿namespace Firefighter_Project
 {
-    partial class Form1
+    partial class LoginView
     {
         /// <summary>
         /// Required designer variable.
