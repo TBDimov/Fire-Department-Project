@@ -16,5 +16,15 @@ namespace Firefighter_Project
         {
             InitializeComponent();
         }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void SignUpBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
