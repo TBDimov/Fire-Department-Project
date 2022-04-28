@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Firefighter_Project
+namespace Firefighter_Project.Views
 {
-    public partial class LoginView : Form
+    public partial class FireDepData : Form
     {
-        public LoginView()
+        public FireDepData()
         {
             InitializeComponent();
         }
