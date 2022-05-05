@@ -24,7 +24,9 @@ namespace Firefighter_Project
 
         private void SignUpBtn_Click(object sender, EventArgs e)
         {
-
+            RegisterView rv = new RegisterView();
+            rv.Show();
+            this.Hide();
         }
     }
 }

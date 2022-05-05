@@ -146,6 +146,7 @@
             this.LoginBtn.TabIndex = 10;
             this.LoginBtn.Text = "Log-In";
             this.LoginBtn.UseVisualStyleBackColor = true;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // SignUpBtn
             // 
@@ -167,6 +168,7 @@
             this.CancelBtn.TabIndex = 12;
             this.CancelBtn.Text = "Cancel";
             this.CancelBtn.UseVisualStyleBackColor = true;
+            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
             // CnfrmPasswordLabel
             // 
