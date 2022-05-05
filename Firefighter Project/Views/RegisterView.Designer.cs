@@ -139,6 +139,7 @@
             // 
             // LoginBtn
             // 
+            this.LoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LoginBtn.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginBtn.Location = new System.Drawing.Point(12, 338);
             this.LoginBtn.Name = "LoginBtn";
@@ -150,6 +151,7 @@
             // 
             // SignUpBtn
             // 
+            this.SignUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SignUpBtn.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SignUpBtn.Location = new System.Drawing.Point(79, 296);
             this.SignUpBtn.Name = "SignUpBtn";
@@ -161,6 +163,7 @@
             // 
             // CancelBtn
             // 
+            this.CancelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CancelBtn.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CancelBtn.Location = new System.Drawing.Point(205, 338);
             this.CancelBtn.Name = "CancelBtn";
@@ -210,6 +213,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.RegisterView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

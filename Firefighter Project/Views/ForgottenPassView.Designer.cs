@@ -80,6 +80,7 @@
             // 
             // CancelBtn
             // 
+            this.CancelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CancelBtn.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelBtn.Location = new System.Drawing.Point(56, 320);
             this.CancelBtn.Name = "CancelBtn";
@@ -91,6 +92,7 @@
             // 
             // SendBtn
             // 
+            this.SendBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SendBtn.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SendBtn.Location = new System.Drawing.Point(216, 320);
             this.SendBtn.Name = "SendBtn";

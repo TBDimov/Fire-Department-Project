@@ -93,10 +93,11 @@
             // 
             // ForgotPassBtn
             // 
-            this.ForgotPassBtn.Font = new System.Drawing.Font("Sitka Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForgotPassBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ForgotPassBtn.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForgotPassBtn.Location = new System.Drawing.Point(17, 296);
             this.ForgotPassBtn.Name = "ForgotPassBtn";
-            this.ForgotPassBtn.Size = new System.Drawing.Size(263, 23);
+            this.ForgotPassBtn.Size = new System.Drawing.Size(263, 32);
             this.ForgotPassBtn.TabIndex = 8;
             this.ForgotPassBtn.Text = "Forgotten Password?";
             this.ForgotPassBtn.UseVisualStyleBackColor = true;
@@ -104,6 +105,7 @@
             // 
             // LoginBtn
             // 
+            this.LoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LoginBtn.Font = new System.Drawing.Font("Sitka Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.Location = new System.Drawing.Point(17, 334);
             this.LoginBtn.Name = "LoginBtn";
@@ -111,9 +113,11 @@
             this.LoginBtn.TabIndex = 9;
             this.LoginBtn.Text = "Log In";
             this.LoginBtn.UseVisualStyleBackColor = true;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // SignUpBtn
             // 
+            this.SignUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SignUpBtn.Font = new System.Drawing.Font("Sitka Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignUpBtn.Location = new System.Drawing.Point(158, 334);
             this.SignUpBtn.Name = "SignUpBtn";
