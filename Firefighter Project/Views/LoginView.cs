@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Firefighter_Project.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,18 @@ namespace Firefighter_Project
             RegisterView rv = new RegisterView();
             rv.Show();
             this.Hide();
+        }
+
+        private void ForgotPassBtn_Click(object sender, EventArgs e)
+        {
+            ForgottenPassView fpv = new ForgottenPassView();
+            fpv.Show();
+            this.Hide();
+        }
+
+        private void LoginView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
