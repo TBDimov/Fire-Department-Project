@@ -36,5 +36,17 @@ namespace Firefighter_Project
         {
 
         }
+
+        private void CancelBtn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            LoginView lv = new LoginView();
+            lv.Show();
+            this.Hide();
+        }
     }
 }
