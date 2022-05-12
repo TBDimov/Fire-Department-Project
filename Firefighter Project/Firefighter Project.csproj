@@ -105,5 +105,17 @@
   <ItemGroup>
     <None Include="Resources\small red line.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firefightericon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\axeicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firefightericon-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\axeicon-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
