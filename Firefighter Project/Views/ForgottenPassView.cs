@@ -8,30 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Firefighter_Project
+namespace Firefighter_Project.Views
 {
-    public partial class RegisterView : Form
+    public partial class ForgottenPassView : Form
     {
-        public RegisterView()
+        public ForgottenPassView()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void CancelBtn_Click(object sender, EventArgs e)
         {
-
+            LoginView lv = new LoginView();
+            lv.Show();
+            this.Hide();
         }
 
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void LoginBtn_Click(object sender, EventArgs e)
-        {
-            LoginView lv = new LoginView();
-            lv.Show();
-            this.Hide();
         }
     }
 }
