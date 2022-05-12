@@ -52,7 +52,6 @@
             this.TopTxtLbl.Size = new System.Drawing.Size(342, 45);
             this.TopTxtLbl.TabIndex = 0;
             this.TopTxtLbl.Text = "Forgotten Password?";
-            this.TopTxtLbl.Click += new System.EventHandler(this.TopTxtLbl_Click);
             // 
             // SubtextLbl
             // 
@@ -64,7 +63,6 @@
             this.SubtextLbl.TabIndex = 1;
             this.SubtextLbl.Text = "Please enter your E-Mail,\r\nso we can send you a\r\npassword change request.\r\n";
             this.SubtextLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.SubtextLbl.Click += new System.EventHandler(this.SubtextLbl_Click);
             // 
             // EmailLbl
             // 
@@ -75,8 +73,6 @@
             this.EmailLbl.Name = "EmailLbl";
             this.EmailLbl.Size = new System.Drawing.Size(298, 30);
             this.EmailLbl.TabIndex = 2;
-            this.EmailLbl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.EmailLbl.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // CancelBtn
             // 
@@ -100,7 +96,6 @@
             this.SendBtn.TabIndex = 4;
             this.SendBtn.Text = "Send it!";
             this.SendBtn.UseVisualStyleBackColor = true;
-            this.SendBtn.Click += new System.EventHandler(this.SendBtn_Click);
             // 
             // LogoPic
             // 
@@ -135,6 +130,7 @@
             // 
             // ExitBtn
             // 
+            this.ExitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitBtn.Location = new System.Drawing.Point(362, 12);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(40, 31);
