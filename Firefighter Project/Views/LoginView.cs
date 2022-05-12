@@ -36,5 +36,15 @@ namespace Firefighter_Project
             fpv.Show();
             this.Hide();
         }
+
+        private void LoginView_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

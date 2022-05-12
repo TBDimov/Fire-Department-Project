@@ -17,6 +17,26 @@ namespace Firefighter_Project.Views
             InitializeComponent();
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubtextLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TopTxtLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SendBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void CancelBtn_Click(object sender, EventArgs e)
         {
             LoginView lv = new LoginView();
@@ -27,11 +47,6 @@ namespace Firefighter_Project.Views
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void ForgottenPassView_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

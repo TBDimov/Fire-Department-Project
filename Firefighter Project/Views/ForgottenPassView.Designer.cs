@@ -161,7 +161,6 @@
             this.Name = "ForgottenPassView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgottenPassView";
-            this.Load += new System.EventHandler(this.ForgottenPassView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LogoPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
