@@ -17,29 +17,9 @@ namespace Firefighter_Project
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void RegisterView_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SignUpBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CancelBtn_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void LoginBtn_Click(object sender, EventArgs e)
