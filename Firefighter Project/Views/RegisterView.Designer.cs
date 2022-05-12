@@ -70,7 +70,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Firefighter_Project.Properties.Resources.fire_fighter_logoo;
-            this.pictureBox1.Location = new System.Drawing.Point(51, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(62, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(194, 106);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,13 +125,13 @@
             // 
             // ExitBtn
             // 
-            this.ExitBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ExitBtn.BackColor = System.Drawing.Color.Transparent;
+            this.ExitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitBtn.Font = new System.Drawing.Font("Sitka Text", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitBtn.Location = new System.Drawing.Point(263, -1);
+            this.ExitBtn.Location = new System.Drawing.Point(250, 12);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(30, 23);
+            this.ExitBtn.Size = new System.Drawing.Size(30, 28);
             this.ExitBtn.TabIndex = 9;
             this.ExitBtn.Text = "X";
             this.ExitBtn.UseVisualStyleBackColor = false;
@@ -139,6 +139,7 @@
             // 
             // LoginBtn
             // 
+            this.LoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LoginBtn.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginBtn.Location = new System.Drawing.Point(12, 338);
             this.LoginBtn.Name = "LoginBtn";
@@ -150,6 +151,7 @@
             // 
             // SignUpBtn
             // 
+            this.SignUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SignUpBtn.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SignUpBtn.Location = new System.Drawing.Point(79, 296);
             this.SignUpBtn.Name = "SignUpBtn";
@@ -157,10 +159,10 @@
             this.SignUpBtn.TabIndex = 11;
             this.SignUpBtn.Text = "Sign-Up";
             this.SignUpBtn.UseVisualStyleBackColor = true;
-            this.SignUpBtn.Click += new System.EventHandler(this.SignUpBtn_Click);
             // 
             // CancelBtn
             // 
+            this.CancelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CancelBtn.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CancelBtn.Location = new System.Drawing.Point(205, 338);
             this.CancelBtn.Name = "CancelBtn";
@@ -168,7 +170,6 @@
             this.CancelBtn.TabIndex = 12;
             this.CancelBtn.Text = "Cancel";
             this.CancelBtn.UseVisualStyleBackColor = true;
-            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
             // CnfrmPasswordLabel
             // 
@@ -210,8 +211,8 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.RegisterView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

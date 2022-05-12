@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.LoginLbl = new System.Windows.Forms.Label();
             this.EmailLbl = new System.Windows.Forms.Label();
             this.PassLbl = new System.Windows.Forms.Label();
@@ -40,40 +37,13 @@
             this.LoginBtn = new System.Windows.Forms.Button();
             this.SignUpBtn = new System.Windows.Forms.Button();
             this.ExitBtn = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Firefighter_Project.Properties.Resources.redline;
-            this.pictureBox2.Location = new System.Drawing.Point(-67, 122);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(418, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Firefighter_Project.Properties.Resources.icon;
-            this.pictureBox1.Location = new System.Drawing.Point(57, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 108);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Firefighter_Project.Properties.Resources.redline;
-            this.pictureBox3.Location = new System.Drawing.Point(-67, 385);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(418, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
             // 
             // LoginLbl
             // 
@@ -123,16 +93,19 @@
             // 
             // ForgotPassBtn
             // 
-            this.ForgotPassBtn.Font = new System.Drawing.Font("Sitka Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForgotPassBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ForgotPassBtn.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForgotPassBtn.Location = new System.Drawing.Point(17, 296);
             this.ForgotPassBtn.Name = "ForgotPassBtn";
-            this.ForgotPassBtn.Size = new System.Drawing.Size(263, 23);
+            this.ForgotPassBtn.Size = new System.Drawing.Size(263, 32);
             this.ForgotPassBtn.TabIndex = 8;
             this.ForgotPassBtn.Text = "Forgotten Password?";
             this.ForgotPassBtn.UseVisualStyleBackColor = true;
+            this.ForgotPassBtn.Click += new System.EventHandler(this.ForgotPassBtn_Click);
             // 
             // LoginBtn
             // 
+            this.LoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LoginBtn.Font = new System.Drawing.Font("Sitka Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.Location = new System.Drawing.Point(17, 334);
             this.LoginBtn.Name = "LoginBtn";
@@ -143,6 +116,7 @@
             // 
             // SignUpBtn
             // 
+            this.SignUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SignUpBtn.Font = new System.Drawing.Font("Sitka Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignUpBtn.Location = new System.Drawing.Point(158, 334);
             this.SignUpBtn.Name = "SignUpBtn";
@@ -154,6 +128,7 @@
             // 
             // ExitBtn
             // 
+            this.ExitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitBtn.Location = new System.Drawing.Point(253, 12);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(27, 23);
@@ -161,6 +136,36 @@
             this.ExitBtn.Text = "X";
             this.ExitBtn.UseVisualStyleBackColor = true;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Firefighter_Project.Properties.Resources.redline;
+            this.pictureBox3.Location = new System.Drawing.Point(-67, 385);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(418, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Firefighter_Project.Properties.Resources.redline;
+            this.pictureBox2.Location = new System.Drawing.Point(-67, 122);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(418, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Firefighter_Project.Properties.Resources.icon;
+            this.pictureBox1.Location = new System.Drawing.Point(57, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(166, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // LoginView
             // 
@@ -183,9 +188,9 @@
             this.Name = "LoginView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

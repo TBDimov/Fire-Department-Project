@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\ForgottenPassView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ForgottenPassView.Designer.cs">
+      <DependentUpon>ForgottenPassView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\ForgottenPassView.resx">
+      <DependentUpon>ForgottenPassView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
