@@ -27,6 +27,21 @@ namespace Firefighter_Project
             Application.Exit();
         }
 
+        private void RegisterView_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void SignUpBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CancelBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             LoginView lv = new LoginView();

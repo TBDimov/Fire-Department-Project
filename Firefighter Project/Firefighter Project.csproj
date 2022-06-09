@@ -48,8 +48,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,6 +70,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\FireDepController.cs" />
+    <Compile Include="Model\FireDepModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FireDepModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FireDepModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FireDepModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FireDepModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FireDepModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FireFighter.cs">
+      <DependentUpon>FireDepModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FireTruck.cs">
+      <DependentUpon>FireDepModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\User.cs">
+      <DependentUpon>FireDepModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Views\ForgottenPassView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +134,14 @@
     <EmbeddedResource Include="Views\RegisterView.resx">
       <DependentUpon>RegisterView.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="Model\FireDepModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FireDepModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\FireDepModel.edmx.diagram">
+      <DependentUpon>FireDepModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -113,10 +155,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\icon.png" />
   </ItemGroup>
@@ -139,6 +178,16 @@
     <None Include="Resources\firefightericon-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Model\FireDepModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FireDepModel.edmx</DependentUpon>
+      <LastGenOutput>FireDepModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\FireDepModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FireDepModel.edmx</DependentUpon>
+      <LastGenOutput>FireDepModel.cs</LastGenOutput>
+    </Content>
     <None Include="Resources\axeicon-removebg-preview.png" />
     <Content Include="FireDepDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -146,13 +195,6 @@
     <Content Include="FireDepDB_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>FireDepDB.mdf</DependentUpon>
-    </Content>
-    <Content Include="UserDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="UserDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>UserDB.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +208,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
